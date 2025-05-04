@@ -128,6 +128,21 @@ body {
 }
 
 /* Responsive (Mobile View) */
+@media (max-width: 1200px) {
+  .nav-list {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  @media (max-width: 992px) {
+    .nav-list {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    @media (max-width: 600px) {
+      .nav-list {
+        flex-direction: row;
+        align-items: flex-start;
+      }
 @media (max-width: 768px) {
   .nav-list {
     flex-direction: row;
@@ -148,8 +163,10 @@ body {
     width: 100%;
   }
 }
+    }
+  }
 
-
+}
 /* Ribbon */
 .ribbon {
     background-color: rgb(40, 38, 38);
@@ -889,9 +906,21 @@ h1 {
     font-weight: 600;
 }
 /* Uniform layout on all devices */
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   header, nav, main, section, .hero {
     max-width: 800px;
     margin: 0 auto;
+  }
+  @media (min-width: 600px) {
+    header, nav, main, section, .hero {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    @media (min-width: 992px) {
+      header, nav, main, section, .hero {
+        max-width: 800px;
+        margin: 0 auto;
+      } 
+}
   }
 }
